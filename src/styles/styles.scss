@@ -68,3 +68,63 @@
         }
     }
 }
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/hero-image.jpg);
+    height: 96vh;
+    background-size: cover;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: left;
+        min-height: -webkit-fill-available;
+        margin-left: 10%;
+
+        .hero-text{
+            text-align: left;
+            color: rgb(246, 246, 246);
+            width: 59%;
+
+            h1{
+                font-family: "Oswald", sans-serif;
+                font-style: italic;
+                font-size: 55px;
+                font-weight: 600;
+            }
+
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: normal;
+                font-size: 30px;
+                font-weight: 200;
+                padding-bottom: 50px;
+            }
+
+            a{
+                padding: 15px 20px;
+                border-radius: 1px;
+                font-size: 19px;
+                color: #f8f8f8;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 500;
+                border: 1.5px solid;
+                outline-style: solid;
+                // outline-color: #fbdebb;
+                transition: 0.3s ease-in;
+                border-radius: 4px;
+            }
+
+            a:hover{
+                cursor: pointer;
+                background: #eea83f;
+                transition: 0.3s ease-in;
+                color: rgb(34, 34, 34);
+                border: 1.5px solid transparent;
+
+            }
+        }
+    }
+   
+}

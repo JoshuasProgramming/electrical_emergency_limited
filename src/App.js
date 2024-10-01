@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //components for the Homepage
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 
 //pages
@@ -12,6 +13,7 @@ function HomePage() {
   return (
     <div>
       <Navbar/>
+      <Hero/>
     </div>
   );
 }
