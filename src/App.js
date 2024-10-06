@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 
 //pages
+import About from './pages/About';
 
 function HomePage() {
   return (
@@ -32,7 +33,7 @@ function App() {
       <Routes>
          {/* homepage route path */}
          <Route path="/" element={<HomePage/>} />
-
+         <Route path="/about" element={<About/>} />
       </Routes>
     </Router>
   );

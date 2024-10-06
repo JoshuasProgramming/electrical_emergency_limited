@@ -45,7 +45,7 @@
 
     .middle-nav{
         ul{
-           li{
+           li,a{
             text-decoration: none;
             display: inline;
             padding: 20px;
@@ -156,7 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     height: 55vh;
     background: #fafafa;
 
@@ -166,7 +166,7 @@
 
         img{
             width: 82%;
-            margin: 0px 10%;
+            margin: 0px 7%;
         }
     }
 
@@ -221,6 +221,15 @@
             text-shadow: 0px 0px 0px #000;
         }
     }
+}
+
+.contact{
+    flex-direction: row;
+
+    .info-text{
+        margin: auto;
+    }
+
 }
 
 .services{

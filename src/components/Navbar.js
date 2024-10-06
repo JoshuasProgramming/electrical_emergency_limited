@@ -5,6 +5,8 @@ import '../styles/styles.css';
 //import images
 import logo from '../images/logo_2.png';
 
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <div className="nav">
@@ -19,8 +21,8 @@ function Navbar() {
         {/* middle */}
         <div className='middle-nav'>
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
                 <li>Our Services</li>
                 <li>Contact Us</li>
             </ul>
