@@ -19,7 +19,7 @@ function Services() {
         <div className='service-card'>
             <img src={service2} alt='service2'></img>
             <h1>EICR's</h1>
-            <p>Domestic, Industrial & Commercial</p>
+            <p>Domestic & Commercial</p>
         </div>
 
         <div className='service-card'>
@@ -31,7 +31,7 @@ function Services() {
         <div className='service-card'>
             <img src={service4} alt='service4'></img>
             <h1>Emergency Electrical Reports</h1>
-            <p>Domestic, Industrial & Commercial</p>
+            <p>Domestic & Commercial</p>
         </div>
 
     </div>

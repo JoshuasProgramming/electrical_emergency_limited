@@ -2,14 +2,14 @@ import React from 'react'
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
-import info from '../images/info_image.jpg'
+import Accordion from '../components/accordion';
+import info from '../images/info_image.jpg';
 
 function About() {
   return (
 
     <>
-    <Navbar/>
+    <Navbar />
 
     <section class="hero">
 
@@ -74,7 +74,9 @@ function About() {
             <p>We understand that time is crucial when dealing with electrical issues. That's why our experienced electricians are always ready to respond quickly and efficiently. Whether you require emergency repairs or routine maintenance, you can rely on us to be there when you need us. Our team is dedicated to providing prompt and reliable service to effectively resolve your electrical problems.            </p>
         </div>
     </div>
-    
+
+    <Accordion/>
+
     <Footer/>
     </>
 

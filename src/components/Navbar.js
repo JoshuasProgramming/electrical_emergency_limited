@@ -3,7 +3,7 @@ import React from 'react'
 import '../styles/styles.css';
 
 //import images
-import logo from '../images/logo_2.png';
+import logo from '../images/Emergency Electrical Limited logo.png';
 
 import { Link } from 'react-router-dom';
 
