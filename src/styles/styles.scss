@@ -225,7 +225,7 @@
     }
 }
 
-.info, .contact{
+.info, .contact, .location{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,6 +296,7 @@
     }
 }
 
+
 .contact{
     flex-direction: row;
 
@@ -350,6 +351,7 @@
     justify-content: center;
     flex-direction: column;
     width: -webkit-fill-available;
+    margin-bottom: 25px;
 
     h2{
         font-style: normal;

@@ -3,6 +3,8 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Accordion from '../components/accordion';
+
+
 import info from '../images/info_image.jpg';
 
 function About() {

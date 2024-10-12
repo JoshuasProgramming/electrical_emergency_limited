@@ -15,7 +15,7 @@ function Navbar() {
 
         <div className='left-nav'>
             {/* <h1>Electrical Emergency Limited</h1> */}
-            <img src={logo}></img>
+            <Link to="/"><img src={logo}></img></Link>
         </div>
 
         {/* middle */}
@@ -24,7 +24,7 @@ function Navbar() {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li>Our Services</li>
-                <li>Contact Us</li>
+                <li><Link to="/contact">Contact Us</Link></li>
             </ul>
         </div>
     </div>
