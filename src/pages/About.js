@@ -11,7 +11,7 @@ function About() {
     <>
     <Navbar />
 
-    <section class="hero">
+    <section className="hero-different">
 
         <div className='wrapper'>
             <section class="hero-text">
