@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react';
+
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Accordion from '../components/accordion';
+import Pointers from '../components/Pointers';
+
+
+import info from '../images/info_image.jpg';
 
 function OurServices() {
+
+    const data = [
+        { title: 'What Electrical Installations do we install', text: 'We install consumer units, solar panels, Socket & Switch,Indoor and outdoor lighting, Heating, Showers, Bathroom fans' },
+        { title: 'What Are EICRs?', text: 'EICRs are vital assessments for ensuring electrical safety, while remedial work is the necessary follow-up to address any issues found. Both play a crucial role in maintaining safe electrical environments in homes and businesses' },
+        { title: 'Fault Finding?', text: 'Fault finding and repair are crucial for maintaining the safety and efficiency of electrical systems. By systematically diagnosing issues and implementing effective repairs, professionals help ensure reliable and safe electrical environments.' },
+        { title: 'Rewritting', text: 'Rewiring is a vital investment in the safety, efficiency, and longevity of your electrical system. By addressing outdated or faulty wiring, you can protect your property, enhance its value, and ensure it meets modern demands. Regular assessments and timely rewiring can ultimately save you from more extensive problems in the future.' },
+    ]
+        
+
+    // State to track which accordion is active
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    // Toggle function to open/close the accordion
+    const toggleAccordion = (index) => {
+        setActiveIndex(activeIndex === index ? null : index); // Toggle the active accordion
+    };
+
   return (
     <>
     <Navbar />
@@ -16,6 +41,7 @@ function OurServices() {
         
     </section>
 
+    <Pointers/>
 
     <div className='contact'>
         {/* left */}
@@ -25,8 +51,8 @@ function OurServices() {
 
         {/* right */}
         <div className='info-text'>
-            <h2>About Us</h2>
-            <p>When electrical emergencies strike, you need a reliable team you can trust and count on—anytime, day or night. At 24/7 ASAP Emergency Electrical, we provide swift, professional, and dependable services around the clock, whether you’re facing a sudden power outage, exposed wiring, or malfunctioning systems. Our mission is to resolve your electrical issues safely and efficiently, ensuring your peace of mind when it matters most.</p>
+            <h2>Residential Electrical Services</h2>
+            <p>From lighting installations to panel upgrades, we enhance the safety and efficiency of your home</p>
         </div>
     </div>
 
@@ -38,8 +64,8 @@ function OurServices() {
 
         {/* right */}
         <div className='info-text'>
-            <h2>Why Choose Us?</h2>
-            <p>Around-the-Clock Availability <br></br> Electrical emergencies don’t follow a schedule, and neither do we. Our dedicated team of certified electricians are available 24/7, ready to swiftly address any issue—be it a power outage, faulty wiring, or urgent repairs. We are committed to providing immediate and reliable assistance whenever you need it.</p>
+            <h2>Commercial Electrical Solutions</h2>
+            <p>We cater to businesses of all sizes, offering everything from maintenance to full-scale electrical installations</p>
         </div>
     </div>
 
@@ -51,8 +77,8 @@ function OurServices() {
 
         {/* right */}
         <div className='info-text'>
-            <h2>Fast Response Time</h2>
-            <p>We understand that time is crucial when dealing with electrical issues. That's why our experienced electricians are always ready to respond quickly and efficiently. Whether you require emergency repairs or routine maintenance, you can rely on us to be there when you need us. Our team is dedicated to providing prompt and reliable service to effectively resolve your electrical problems.            </p>
+            <h2>Emergency Repairs</h2>
+            <p>Our team is always ready to tackle unexpected electrical problems, minimizing downtime and ensuring your peace of mind</p>
         </div>
     </div>
 
@@ -64,10 +90,39 @@ function OurServices() {
 
         {/* right */}
         <div className='info-text'>
-            <h2>Qualified and Trusted Professionals</h2>
-            <p>We understand that time is crucial when dealing with electrical issues. That's why our experienced electricians are always ready to respond quickly and efficiently. Whether you require emergency repairs or routine maintenance, you can rely on us to be there when you need us. Our team is dedicated to providing prompt and reliable service to effectively resolve your electrical problems.            </p>
+            <h2>Energy Efficiency Upgrades</h2>
+            <p>We help you save on energy costs with solutions like LED lighting, smart home systems, and more</p>
         </div>
     </div>
+
+
+    <div className="accordion-flexbox">
+
+            <h2>Electrical Installations</h2>
+
+            {data.map((item, index) => (
+                <div key={index} className='accordion-button-wrapper'>
+                    <button
+                        className="accordion"
+                        onClick={() => toggleAccordion(index)}
+                    >
+                        {item.title} <span>{activeIndex === index ? '-' : '+'}</span>
+                    </button>
+                    <div
+                        className="accordion-panel"
+                        style={{
+                            display: activeIndex === index ? 'block' : 'none',
+
+                        }}
+                    >
+                        <p>{item.text}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+
+
+    
 
     <Footer/>
     </>

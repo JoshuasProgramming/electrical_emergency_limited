@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 
 //pages
 import About from './pages/About';
+import OurServices from './pages/OurServices';
 import ContactUs from './pages/ContactUs';
 
 function HomePage() {
@@ -23,7 +24,7 @@ function HomePage() {
       <Hero/>
       <Info/>
       <Services/>
-      <Contact/>
+      <Location/>
       <Footer/>
     </div>
   );
@@ -36,6 +37,7 @@ function App() {
          {/* homepage route path */}
          <Route path="/" element={<HomePage/>} />
          <Route path="/about" element={<About/>} />
+         <Route path="/services" element={<OurServices/>} />
          <Route path="/contact" element={<ContactUs/>} />
       </Routes>
     </Router>
