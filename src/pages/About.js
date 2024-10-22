@@ -6,6 +6,7 @@ import Accordion from '../components/accordion';
 
 
 import info from '../images/info_image.jpg';
+import about1 from '../images/about/about1.jpg';
 
 function About() {
   return (
@@ -28,7 +29,7 @@ function About() {
     <div className='contact'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about1} alt='info-image'></img>
         </div>
 
         {/* right */}

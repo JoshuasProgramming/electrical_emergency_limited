@@ -359,7 +359,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: #f4f4f4;
+    background: #e5e5e5;
 
     .icon-wrapper{
         width: 21%;
@@ -510,3 +510,60 @@
         }
     }
 }
+
+
+//table
+@media screen and (max-width: 1170px){
+
+    .nav{
+        display: none;
+    }
+
+    .hero{
+        height: 44vh;
+
+        .wrapper{
+            .hero-text{
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 10px;
+                }
+
+                a{
+                    padding: 8px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .services{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            width: 74%;
+        }
+    }
+
+    .location{
+        height: 127vh;
+        flex-direction: column;
+
+        .info-text{
+            width: 73%;
+        }
+
+        .wrapper{
+            img{
+                margin: 0% 15%;
+            }
+        }
+    }
+}
+
+//mobile
