@@ -440,6 +440,9 @@
   .nav .middle-nav {
     display: none;
   }
+  .hero {
+    height: 92vh;
+  }
   .hero .wrapper {
     justify-content: center;
     margin: 0% 10%;
@@ -458,6 +461,7 @@
   }
   .hero .wrapper .hero-text li, .hero .wrapper .hero-text a {
     font-size: 1.5vh;
+    text-decoration: none;
   }
   .hero-different .wrapper {
     justify-content: center;
@@ -490,6 +494,9 @@
   .info .info-text p {
     font-size: 13px;
   }
+  .info .info-text a {
+    text-decoration: none;
+  }
   .services {
     display: flex;
     align-items: center;
@@ -513,5 +520,20 @@
   }
   .location .info-text p, .contact .info-text p {
     font-size: 13px;
+  }
+  .location .info-text a, .contact .info-text a {
+    text-decoration: none;
+  }
+  .footer ul:nth-child(1), .footer ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer ul:nth-child(1) p, .footer ul:nth-child(2) p {
+    padding: 0px 15px;
+    font-size: 15px;
+    margin-bottom: 3%;
+  }
+  .footer ul:nth-child(1) li:after, .footer ul:nth-child(2) li:after {
+    content: "";
   }
 }/*# sourceMappingURL=styles.css.map */
