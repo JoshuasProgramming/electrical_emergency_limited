@@ -490,6 +490,17 @@
             margin: 10px 0;
             padding: 0px 5px;
             transition: .25s ease-in;
+            text-decoration: none;
+
+            a{
+                text-decoration: none;
+                color: #e9e9e9;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                transition: .25 ease-in;
+            }
         }
 
         li:after{

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -10,17 +11,17 @@ function Footer() {
 
         <div className='footer-section-2'>
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Electrical Installations</li>
-                <li>EICR's</li>
-                <li>Contact Us</li>
+                <li><Link to='/Home'>Home</Link></li>
+                <li><Link to='/about'>About Us</Link></li>
+                <li><Link to='/services'>Electrical Installations</Link></li>
+                <li><Link to='/services'>EICR's</Link></li>
+                <li><Link to='/contact'>Contact Us</Link></li>
             </ul>
 
             <ul>
-                <li>Fault Finding and repair</li>
-                <li>Energy Efficiency Upgrades</li>
-                <li>Commercial Electrical Solutions</li>
+                <li><Link to='/services'>Fault Finding and repair</Link></li>
+                <li><Link to='/services'>Energy Efficiency Upgrades</Link></li>
+                <li><Link to='/services'>Commercial Electrical Solutions</Link></li>
             </ul>
 
         </div>

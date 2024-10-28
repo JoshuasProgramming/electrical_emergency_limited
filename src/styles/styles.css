@@ -423,6 +423,15 @@
   margin: 10px 0;
   padding: 0px 5px;
   transition: 0.25s ease-in;
+  text-decoration: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+  transition: 0.25 ease-in;
 }
 .footer ul li:after {
   content: "|";
