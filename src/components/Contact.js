@@ -14,7 +14,7 @@ function Contact() {
         <div className='info-text'>
             <h2>Contact Us</h2>
             <p>Email: Contact@247asapemergencyelectrical.co.uk</p>
-            <a>Learn More</a>
+            <a href='/services'>View Services</a>
         </div>
     </div>
   )
