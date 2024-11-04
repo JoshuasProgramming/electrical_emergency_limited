@@ -96,7 +96,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/about/about15.jpg);
     height: 82vh;
     background-size: cover;
 
@@ -142,6 +142,7 @@
                 transition: 0.3s ease-in;
                 border-radius: 4px;
                 text-shadow: 0px 0px 2px #000;
+                text-decoration: none;
             }
 
             a:hover{
@@ -164,7 +165,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/about/about15.jpg);
     height: 42vh;
     background-size: cover;
 
@@ -229,16 +230,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    height: 55vh;
+    height: 33vh;
     background: #fafafa;
+    padding: 30px 0px;
 
     .wrapper{
-        width: 84%;
+        width: 37%;
         background-size: cover;
+        margin: 40px 0px;
 
         img{
-            width: 82%;
-            margin: 0px 7%;
+            width: 79%;
+            margin: 0px 5%;
+            border-radius: 10px;
         }
     }
 
@@ -282,6 +286,7 @@
             transition: 0.3s ease-in;
             border-radius: 3px;
             align-self: flex-start;
+            text-decoration: none;
         }
 
         a:hover{
@@ -330,7 +335,8 @@
         flex-direction: column;
 
         img{
-            width: 80%;
+            width: 65%;
+            border-radius: 10px;
         }
 
         h1{
@@ -462,7 +468,7 @@
     justify-self: center;
     flex-direction: column;
     background: #4e4d4d;
-    padding: 1.5% 0%;
+    padding: 2.4% 0%;
 
     p{
         color: #e9e9e9;
@@ -521,13 +527,36 @@
     }
 }
 
-//table viewpoint
-@media screen and (max-width: 1170px){
-    
+@media screen and (min-width: 1220px) {
+    .info, .contact, .location{
+        height: 41vh;
+        .wrapper{
+            width: 39%;
+            img{
+                width: 69%;
+            }
+        }
+    }
 }
 
+//table viewpoint
+@media screen and (max-width: 1170px){
+    .nav{
+        .middle-nav{
+            ul{
+                li{
+                    padding: 0px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+
+
 //mobile viewpoint
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
     .nav{
         .left-nav{
 
@@ -578,7 +607,7 @@
 
                 width: 100%;
                 text-align: center;
-                height: 0%
+                height: 0%;
 
                 h1{
                     font-size: 30px;
@@ -595,7 +624,7 @@
     .info{
         height: -webkit-fill-available;
         flex-direction: column;
-        margin: 16px 0px;
+        padding: 16px 0px;
         .wrapper{
             img{
                 margin: 0% 8%;
@@ -606,11 +635,11 @@
             margin-top: 5px;
 
             h2{
-                font-size: 25px;
+                font-size: 30px;
             }
 
             p{
-                font-size: 13px;
+                font-size: 22px;
             }
             a{
                 text-decoration: none;
@@ -628,9 +657,10 @@
     .location, .contact{
         height: -webkit-fill-available;
         flex-direction: column;
-        margin: 16px 0px;
+        padding: 0px 0px 16px 0px;
 
         .wrapper{
+            margin: 16px 0px;
             img{
                 margin: 0% 8%;
                 width: 85%;
@@ -640,18 +670,31 @@
         .info-text{
             margin-top: 5px;
             h2{
-                font-size: 25px;
+                font-size: 30px;
             }
 
             p{
-                font-size: 13px;
+                font-size: 22px;
             }
             a{
                 text-decoration: none;
             }
         }
+
+        #contact{
+            h2, p, a{
+                text-align: center;
+                width: -webkit-fill-available;
+            }
+
+            p{
+                font-size: 4vw;
+            }
+        }
         
     }
+
+   
 
     .footer{
 

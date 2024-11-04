@@ -7,6 +7,10 @@ import Accordion from '../components/accordion';
 
 import info from '../images/info_image.jpg';
 import about1 from '../images/about/about1.jpg';
+import about2 from '../images/about/about2.jpg';
+import about3 from '../images/about/about3.jpg';
+import about4 from '../images/about/about4.jpg';
+import about5 from '../images/about/about5.jpg';
 
 function About() {
   return (
@@ -42,7 +46,7 @@ function About() {
     <div className='info'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about2} alt='info-image'></img>
         </div>
 
         {/* right */}
@@ -55,7 +59,7 @@ function About() {
     <div className='contact'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about3} alt='info-image'></img>
         </div>
 
         {/* right */}
@@ -68,7 +72,7 @@ function About() {
     <div className='info'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about4} alt='info-image'></img>
         </div>
 
         {/* right */}

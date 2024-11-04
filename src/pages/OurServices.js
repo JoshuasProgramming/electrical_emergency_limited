@@ -8,6 +8,12 @@ import Pointers from '../components/Pointers';
 
 import info from '../images/info_image.jpg';
 
+import about10 from '../images/about/about10.jpg';
+import about11 from '../images/about/about11.jpg';
+import about12 from '../images/about/about12.jpg';
+import about13 from '../images/about/about13.jpg';
+
+
 function OurServices() {
 
     const data = [
@@ -46,7 +52,7 @@ function OurServices() {
     <div className='contact'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about10} alt='info-image'></img>
         </div>
 
         {/* right */}
@@ -59,7 +65,7 @@ function OurServices() {
     <div className='info'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about11} alt='info-image'></img>
         </div>
 
         {/* right */}
@@ -72,7 +78,7 @@ function OurServices() {
     <div className='contact'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about12} alt='info-image'></img>
         </div>
 
         {/* right */}
@@ -85,7 +91,7 @@ function OurServices() {
     <div className='info'>
         {/* left */}
         <div className='wrapper'>
-            <img src={info} alt='info-image'></img>
+            <img src={about13} alt='info-image'></img>
         </div>
 
         {/* right */}

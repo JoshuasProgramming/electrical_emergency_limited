@@ -77,7 +77,7 @@
   animation: fadeInAnimation ease 1.75s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/hero-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/about/about15.jpg);
   height: 82vh;
   background-size: cover;
 }
@@ -121,6 +121,7 @@
   transition: 0.3s ease-in;
   border-radius: 4px;
   text-shadow: 0px 0px 2px #000;
+  text-decoration: none;
 }
 .hero .wrapper .hero-text a:hover {
   cursor: pointer;
@@ -136,7 +137,7 @@
   animation: fadeInAnimation ease 1.75s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/hero-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/about/about15.jpg);
   height: 42vh;
   background-size: cover;
 }
@@ -195,16 +196,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  height: 55vh;
+  height: 33vh;
   background: #fafafa;
+  padding: 30px 0px;
 }
 .info .wrapper, .contact .wrapper, .location .wrapper {
-  width: 84%;
+  width: 37%;
   background-size: cover;
+  margin: 40px 0px;
 }
 .info .wrapper img, .contact .wrapper img, .location .wrapper img {
-  width: 82%;
-  margin: 0px 7%;
+  width: 79%;
+  margin: 0px 5%;
+  border-radius: 10px;
 }
 .info .info-text, .contact .info-text, .location .info-text {
   display: flex;
@@ -244,6 +248,7 @@
   transition: 0.3s ease-in;
   border-radius: 3px;
   align-self: flex-start;
+  text-decoration: none;
 }
 .info .info-text a:hover, .contact .info-text a:hover, .location .info-text a:hover {
   cursor: pointer;
@@ -283,7 +288,8 @@
   flex-direction: column;
 }
 .services .service-card img {
-  width: 80%;
+  width: 65%;
+  border-radius: 10px;
 }
 .services .service-card h1 {
   font-family: "Oswald", sans-serif;
@@ -396,7 +402,7 @@
   justify-self: center;
   flex-direction: column;
   background: #4e4d4d;
-  padding: 1.5% 0%;
+  padding: 2.4% 0%;
 }
 .footer p {
   color: #e9e9e9;
@@ -445,7 +451,24 @@
   padding: 0px 1px 0px 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1220px) {
+  .info, .contact, .location {
+    height: 41vh;
+  }
+  .info .wrapper, .contact .wrapper, .location .wrapper {
+    width: 39%;
+  }
+  .info .wrapper img, .contact .wrapper img, .location .wrapper img {
+    width: 69%;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav .middle-nav ul li {
+    padding: 0px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 780px) {
   .nav .middle-nav {
     display: none;
   }
@@ -479,9 +502,11 @@
   .hero-different .wrapper .hero-text {
     width: 100%;
     text-align: center;
-    height: 0% h1;
-    height-font-size: 30px;
-    height-padding-bottom: 7px;
+    height: 0%;
+  }
+  .hero-different .wrapper .hero-text h1 {
+    font-size: 30px;
+    padding-bottom: 7px;
   }
   .hero-different .wrapper .hero-text p {
     font-size: 16px;
@@ -489,7 +514,7 @@
   .info {
     height: -webkit-fill-available;
     flex-direction: column;
-    margin: 16px 0px;
+    padding: 16px 0px;
   }
   .info .wrapper img {
     margin: 0% 8%;
@@ -498,10 +523,10 @@
     margin-top: 5px;
   }
   .info .info-text h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .info .info-text p {
-    font-size: 13px;
+    font-size: 22px;
   }
   .info .info-text a {
     text-decoration: none;
@@ -515,6 +540,9 @@
   .location, .contact {
     height: -webkit-fill-available;
     flex-direction: column;
+    padding: 0px 0px 16px 0px;
+  }
+  .location .wrapper, .contact .wrapper {
     margin: 16px 0px;
   }
   .location .wrapper img, .contact .wrapper img {
@@ -525,13 +553,20 @@
     margin-top: 5px;
   }
   .location .info-text h2, .contact .info-text h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .location .info-text p, .contact .info-text p {
-    font-size: 13px;
+    font-size: 22px;
   }
   .location .info-text a, .contact .info-text a {
     text-decoration: none;
+  }
+  .location #contact h2, .location #contact p, .location #contact a, .contact #contact h2, .contact #contact p, .contact #contact a {
+    text-align: center;
+    width: -webkit-fill-available;
+  }
+  .location #contact p, .contact #contact p {
+    font-size: 4vw;
   }
   .footer ul:nth-child(1), .footer ul:nth-child(2) {
     display: flex;
