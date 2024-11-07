@@ -91,7 +91,7 @@ const Accordion = () => {
                         className="accordion"
                         onClick={() => toggleAccordion(index)}
                     >
-                        {item.title} <span>{activeIndex === index ? '-' : '+'}</span>
+                         {item.title} <span>{activeIndex === index ? '-' : '+'}</span>
                     </button>
                     <div
                         className="accordion-panel"

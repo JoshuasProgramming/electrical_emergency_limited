@@ -10,6 +10,7 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import SocialLinks from './components/SocialLinks';
 
 
 //pages
@@ -20,6 +21,7 @@ import ContactUs from './pages/ContactUs';
 function HomePage() {
   return (
     <div>
+      <SocialLinks/>
       <Navbar/>
       <Hero/>
       <Info/>
