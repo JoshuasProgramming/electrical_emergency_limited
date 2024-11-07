@@ -10,7 +10,8 @@ function SocialLinks() {
   return (
     <div className='social-navigation-links'>
         <ul className='social-navigation'>
-            <a href={"whatsapp://send?text" + message + number}>
+            {/* <a href={"whatsapp://send?text" + message + number}> */}
+            <a href={"https://wa.me/" + number}>
                 <li>
                     <img src={whatsapp}></img>
                 </li>
